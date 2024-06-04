@@ -61,7 +61,7 @@ b_{n+1} = ( a_{n} << 1 ) \& (10^{bit} - 1)
 (しつこいようだが、10はいわゆる2進数の10であり、つまり10進数における2である)
 
 \[
-c_{n+1} = \sum_{k} (a_n >> k)
+c_{n+1} = \sum_{i} (a_n >> k_i)
 \]
 
 このとき、$ c_{n+1} $ を以下のように設定することで、最長LFSR を計算することができる:
@@ -73,7 +73,14 @@ c_{n+1} = \sum_{k} (a_n >> k)
     \label{fig:1}
 \end{figure}
 
-但し、表中のnをbit、XNOR from を k と読み替えて漸化式に適用すること
+但し、漸化式中の $bit$、$k_i$ は、表にある表現を用いて
+\[
+bit = n
+\]
+\[
+k_i = {XNOR from}
+\]
+と表せる
 
 
 \subsection{実験方法}
@@ -87,21 +94,21 @@ c_{n+1} = \sum_{k} (a_n >> k)
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[scale=1]
+    \includegraphics[scale=0.7]
 {2.png}
     \label{fig:1}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[scale=0.5]
+    \includegraphics[scale=0.3]
 {3.png}
     \label{fig:1}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[scale=1]
+    \includegraphics[scale=0.7]
 {3-2.png}
     \label{fig:1}
 \end{figure}
@@ -110,12 +117,99 @@ c_{n+1} = \sum_{k} (a_n >> k)
 ここに示したヒストグラムのように、初期値である3 (ソースコード 1.py の54行目で指定した) を除いた全ての数が1から $2^{15}$ まで1回ずつのみ現れ、3のみ2回現れている。
 
 
-\section{実験2-1}
+\section{実験2}
 
 \subsection{目的}
+$Z^d ( \in j = (j_1,j_2 ... , j_d)) $ と表現されるd次元格子において、毎回2d個の隣接点から1点を等確率で選んで進んでいく運動をd次元単純ランダムウォークと呼ぶ。これはブラウン運動などと共に、統計力学・量子力学・数理ファイナンスのようなランダムな運動を数学的に記述するモデルのなかで、もっとも基本的なものの一つとして知られている。今回はそのなかでもっとも基礎的な1次元単純ランダムウォークを実行し、粒子の動きを調べることで、確率過程モデルの基礎を確認する。
 \subsection{理論}
+t回目の試行における粒子の座標を $x_t$ とおくと、
+\[ 
+P(x_{t+1} - x_{t} = 1) = 1/2
+\]
+\[
+P(x_{t+1} - x_{t} = -1) = 1/2
+\]
+を満たすとする(単純ランダムウォーク)
 \subsection{実験方法}
+\subsubsection{実験2-4}
+実験に用いたPythonプログラムを次に示す
+
+\lstinputlisting[caption = キャプション2 ,label = program2]{2-1.py}
+
+\subsubsection{実験2-5}
+実験に用いたPythonプログラムを次に示す
+
+\lstinputlisting[caption = キャプション2 ,label = program2]{2-2.py}
+
 \subsection{実験結果}
+
+\subsubsection{実験2-4}
+実験の結果を次に示す
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{4.png}
+    \label{fig:1}
+\end{figure}
+
+\subsubsection{実験2-5}
+実験の結果を次に示す
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{5.png}
+    \label{fig:1}
+\end{figure}
+
+\section{実験3}
+
+\subsection{目的}
+
+\subsection{理論}
+
+\subsection{実験方法}
+
+\subsubsection{実験3-1}
+実験に用いたPythonプログラムを次に示す
+\lstinputlisting[caption = キャプション2 ,label = program2]{3-1.py}
+
+\subsubsection{実験3-2,3-3}
+実験に用いたPythonプログラムを次に示す
+\lstinputlisting[caption = キャプション2 ,label = program2]{3-2.py}
+
+\subsection{実験結果}
+
+\subsubsection{実験3-1}
+実験の結果を次に示す
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{6.png}
+    \label{fig:1}
+\end{figure}
+
+\subsubsection{実験3-2,3-3}
+実験の結果を次に示す
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{7.png}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{7-2.png}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]
+{7-3.png}
+    \label{fig:1}
+\end{figure}
 
 
 \end{document}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.13)  29 MAY 2024 22:04
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.13)  4 JUN 2024 21:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,6 +313,36 @@ LaTeX Warning: Label `fig:1' multiply defined.
 
 LaTeX Warning: Label `fig:1' multiply defined.
 
+
+LaTeX Warning: Label `program2' multiply defined.
+
+
+LaTeX Warning: Label `program2' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `program2' multiply defined.
+
+
+LaTeX Warning: Label `program2' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
+
+LaTeX Warning: Label `fig:1' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -493,38 +523,38 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <7> not available
 )
 File: 2.png Graphic file (type bmp)
 <2.png>
-
-Overfull \hbox (9.41837pt too wide) in paragraph at lines 90--93
- [][] 
- []
-
-[3]
+ [3]
 File: 3.png Graphic file (type bmp)
 <3.png>
-
-Overfull \hbox (101.92393pt too wide) in paragraph at lines 97--100
- [][] 
- []
-
 File: 3-2.png Graphic file (type bmp)
 <3-2.png>
-
-Overfull \hbox (9.41837pt too wide) in paragraph at lines 104--107
- [][] 
- []
-
-[4] [5] [6] (./main.aux)
+ [4] (./2-1.py [5] [6]) (./2-2.py [7])
+File: 4.png Graphic file (type bmp)
+<4.png>
+File: 5.png Graphic file (type bmp)
+<5.png>
+ [8] [9] (./3-1.py [10])
+(./3-2.py [11] [12])
+File: 6.png Graphic file (type bmp)
+<6.png>
+File: 7.png Graphic file (type bmp)
+<7.png>
+File: 7-2.png Graphic file (type bmp)
+<7-2.png>
+File: 7-3.png Graphic file (type bmp)
+<7-3.png>
+ [13] [14] [15] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8349 strings out of 476133
- 206084 string characters out of 5811991
- 1076826 words of memory out of 5000000
- 29046 multiletter control sequences out of 15000+600000
- 472769 words of font info for 66 fonts, out of 8000000 for 9000
+ 8464 strings out of 476133
+ 208109 string characters out of 5811991
+ 1157819 words of memory out of 5000000
+ 29142 multiletter control sequences out of 15000+600000
+ 472777 words of font info for 67 fonts, out of 8000000 for 9000
  1353 hyphenation exceptions out of 8191
- 105i,6n,112p,416b,1286s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,6n,112p,416b,1691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (6 pages).
+Output written on main.pdf (15 pages).
